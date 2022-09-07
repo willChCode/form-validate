@@ -63,6 +63,14 @@ const limpiarDatos = () => {
     icono.classList.remove("fa-circle-check");
     icono.classList.remove("fa-circle-xmark");
     icono.classList.remove("fa-eye");
+    if (campos.name && campos.lastName && campos.email && campos.password) {
+      return (
+        (campos.name = false),
+        (campos.lastName = false),
+        (campos.email = false),
+        (campos.password = false)
+      );
+    }
   });
   parrafoL.forEach((parrafo) => {
     parrafo.classList.remove("active");

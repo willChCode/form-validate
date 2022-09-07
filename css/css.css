@@ -1,7 +1,6 @@
 * {
   padding: 0;
   margin: 0;
-  font-family: monospace;
   font-family: "Poppins", sans-serif;
 }
 body {
@@ -30,6 +29,7 @@ header {
 }
 .titulo h1 {
   font-weight: 600;
+  font-size: 1.9em;
 }
 .titulo p {
   font-size: 13px;
@@ -43,7 +43,7 @@ header {
 }
 .formulario .section-input {
   display: grid;
-  grid-template-columns: auto;
+  grid-template-columns: 1fr;
   margin-bottom: 10px;
   position: relative;
 }
