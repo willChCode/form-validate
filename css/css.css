@@ -1,0 +1,138 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: monospace;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  background: rgb(255, 255, 255);
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(38, 144, 233, 1) 100%
+  );
+  color: #ffffff;
+}
+header {
+  width: 80%;
+  margin: 12vh auto;
+  border-radius: 10px;
+  background-color: #272a37;
+  padding: 10px 0;
+}
+.titulo {
+  width: fit-content;
+  padding: 10px 30px;
+}
+.titulo h3 {
+  font-weight: lighter;
+  font-size: 16px;
+}
+.titulo h1 {
+  font-weight: 600;
+}
+.titulo p {
+  font-size: 13px;
+  margin-bottom: 10px;
+}
+.titulo span {
+  color: #2690e9;
+}
+.formulario {
+  padding: 10px 30px;
+}
+.formulario .section-input {
+  display: grid;
+  grid-template-columns: auto;
+  margin-bottom: 10px;
+  position: relative;
+}
+.section-input input {
+  background-color: #3d404a;
+  border: 0;
+  outline: none;
+  padding: 7px 15px;
+  border-radius: 5px;
+  color: white;
+  font-size: 0.8em;
+}
+.section-input input:hover {
+  transform: scale(1.03);
+  transition: 0.35s;
+}
+.section-input .icon {
+  position: absolute;
+  right: 7px;
+  line-height: 32px;
+  opacity: 0;
+}
+.form-incorrecto .icon {
+  color: white;
+  opacity: 1;
+}
+.form-correcto .icon {
+  color: #2690e9;
+  opacity: 1;
+}
+.section-input p {
+  font-size: 0.7em;
+  display: none;
+}
+.section-input .active {
+  display: block;
+}
+input::placeholder {
+  color: white;
+  font-size: 0.9em;
+}
+.formulario .section-button {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+
+  margin: 15px auto 10px auto;
+}
+.section-button .button {
+  background-color: #2690e9;
+  border: 0;
+  border-radius: 100px;
+  outline: none;
+  padding: 6px 20px;
+  cursor: pointer;
+  color: white;
+}
+.button:hover {
+  background-color: #3d404a;
+  transform: scale(1.13);
+  transition: 0.35s;
+}
+/* mensaje de exito parrafo */
+.pButton {
+  font-size: 0.77em;
+  color: green;
+  text-align: center;
+  display: none;
+}
+.pActive {
+  display: block;
+}
+.advertencia {
+  display: flex;
+  gap: 2px;
+  background-color: rgb(216, 60, 60);
+  padding: 6px;
+  justify-content: center;
+  color: #ffffff;
+  margin-bottom: -5px;
+  display: none;
+}
+.advertencia .pAdvertencia {
+  font-size: 0.8em;
+}
+.advertencia .iconA {
+  color: white;
+  font-size: 0.95em;
+}
+#formulario .aActive {
+  display: flex;
+}

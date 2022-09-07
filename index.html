@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/css.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header data-aos="zoom-in">
+      <div class="titulo">
+        <h3>START FOR FREE</h3>
+        <h1>Create new account<span>.</span></h1>
+        <p>Already A Member? <span>Log in</span></p>
+      </div>
+
+      <form action="" class="formulario" id="formulario">
+        <section class="section-input" id="gNombre">
+          <input class="limpiar" name="name" type="text" placeholder="Name" />
+          <i class="icon fa-solid fa-circle-xmark"></i>
+          <p id="pName">*Escribe un nombre bien payaso</p>
+          <!-- <i class="fa-solid fa-circle-check"></i> -->
+        </section>
+        <section class="section-input" id="gLastName">
+          <input
+            class="limpiar"
+            name="lastName"
+            type="text"
+            placeholder="Last Name"
+          />
+          <i class="icon fa-solid fa-circle-xmark"></i>
+          <p id="pLastName">*Escribe un nombre bien payaso</p>
+        </section>
+        <section class="section-input" id="gEmail">
+          <input class="limpiar" name="email" type="text" placeholder="Email" />
+          <i class="icon fa-solid fa-circle-xmark"></i>
+          <p>*Escribe un email correcto</p>
+        </section>
+        <section class="section-input" id="gPassword">
+          <input
+            class="limpiar"
+            id="verPass"
+            name="password"
+            type="password"
+            placeholder="Password"
+          />
+          <i id="verP" class="icon fa-solid fa-circle-xmark"></i>
+          <!-- <i class="fa-solid fa-eye"></i> -->
+          <p>*Escribe un password seguro</p>
+        </section>
+        <section class="advertencia" id="advertencia">
+          <i class="iconA fa-solid fa-triangle-exclamation"></i>
+          <p class="pAdvertencia" id="pAdvertencia">
+            ERROR: Completa los campos correctamente!!!
+          </p>
+        </section>
+
+        <section class="section-button">
+          <input class="button" type="button" value="limpiar" id="limpiarF" />
+          <input class="button" type="submit" value="enviar" />
+        </section>
+        <p class="pButton" id="pButton">*Enviado correctamente</p>
+      </form>
+    </header>
+    <script src="js/index.js"></script>
+    <script
+      src="https://kit.fontawesome.com/06ee898c7b.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
